@@ -3,7 +3,7 @@ import "@arcgis/map-components/components/arcgis-map"
 
 const GeodeMap = () => {
 
-  // On map load, initialization functions
+  // On map load, initialization function
   function handleViewReady(e) {
     const view = e.target
     
@@ -29,7 +29,6 @@ const GeodeMap = () => {
     
   return (
     <arcgis-map 
-      tabindex="-1" 
       api-key={import.meta.env.VITE_ARCGIS_API_KEY}
       basemap="dark-gray"
       onarcgisViewReadyChange={handleViewReady}
